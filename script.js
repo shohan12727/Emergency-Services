@@ -42,28 +42,28 @@ function handleCopyButton(buttonId, number) {
 }
 handleCopyButton('nation_copy', 'national_number_id');
 handleCopyButton('police_copy', 'police_number_id');
-handleCopyButton('fire_copy', 'fire_number_id')
+handleCopyButton('fire_copy', 'fire_number_id');
+handleCopyButton('ambulance_copy', 'ambulance_copy_id');
+handleCopyButton('woman_copy', 'woman_copy_id');
+handleCopyButton('copruption_copy', 'copruption_copy_id');
+handleCopyButton('electricity_copy', 'electricity_copy_id');
+handleCopyButton('brac_copy', 'brac_copy_id');
+handleCopyButton('railway_copy', 'railway_copy_id');
 
 
 // call button funtionality 
 function handleCall(buttonId, serviceName, serviceNumber) {
     const callCoinElement = getElement('call_coin');
-
     document.getElementById(buttonId).addEventListener('click', function () {
         let callCoin = parseInt(callCoinElement.innerText);
-
         if (callCoin < 20) {
             alert('Insufficient coin');
             return;
         }
-
         callCoin -= 20;
         callCoinElement.innerText = callCoin;
-
         alert(`For ${serviceName} Service, Dial: ${serviceNumber}`);
-
         const callHistory = getElement('call_history');
-
         const callDiv = document.createElement('div');
         callDiv.className = 'flex items-center justify-between bg-[#FAFAFA] p-1 mt-4';
         callDiv.innerHTML = `
@@ -79,5 +79,14 @@ function handleCall(buttonId, serviceName, serviceNumber) {
 }
 handleCall('call_national', 'National Emergency', '999');
 handleCall('call_police', 'Police Service', '999');
-handleCall('fire_call', 'Fire Service', '999')
+handleCall('fire_call', 'Fire Service', '999');
+handleCall('call_ambulace', 'Ambulance Service', '1994-999999');
+handleCall('woman_and_child_call', 'Women & Child Helpline', '109');
+handleCall('coruption_call', 'Anti-Corruption', '106');
+handleCall('electricity_call', 'Electricity Helpline', '16216');
+handleCall('brac_call', 'Brac Helpline', '16445');
+handleCall('railway_call', 'Bangladesh Railway Helpline', '163');
+
+
+
 
