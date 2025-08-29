@@ -42,7 +42,7 @@
                     </button>
                 </div>
                 <button class="text-white bg-[#00A63E] py-[8px] px-[30px] rounded-l-full  rounded-r-full">
-                    <span></span>
+                    <span id="copy_count">0</span>
                     Copy
                 </button>
             </div>
@@ -82,14 +82,64 @@
                     </div>
                     <h1 class="font-bold text-[18px] mt-3">National Emergency Number</h1>
                     <p class="text-14px text-[#5C5C5C] mb-1">National Emergency</p>
-                    <h2 class="font-bold text-2xl">999</h2>
+                    <h2 id="national_number_id" class="font-bold text-2xl">999</h2>
                     <button class="text-[#5C5C5C] px-3 py-1.5 bg-[#F2F2F2] rounded-xl mb-3">All</button>
                     <div class="card_footer_div">
-                        <button 
+                        <button id="nation_copy"
                             class="border border-gray-300 rounded-l-[8px] rounded-r-[8px] py-1 text-gray-600 w-[49%] transition-colors duration-300 hover:bg-gray-200">
                             <i class="fa-regular fa-copy"></i> Copy
                         </button>
                         <button id="call_national"
+                            class="border border-gray-300 rounded-l-[8px] bg-[#00A63E] text-white rounded-r-[8px] py-1 w-[49%] transition-transform duration-300 hover:scale-105">
+                            <i class="fa-solid fa-phone"></i> Call
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="card bg-white shadow p-5 rounded-xl transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105">
+                    <div class="card_header_part flex justify-between items-center">
+                        <div class="img_div w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl">
+                            <img class="w-full h-full" src="./assets/police.png" alt="">
+                        </div>
+                        <div class="heart_icon text-gray-400 transition-colors duration-300 hover:text-red-500">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <h1 class="font-bold text-[18px] mt-3">Police Helpline Number</h1>
+                    <p class="text-14px text-[#5C5C5C] mb-1">Police</p>
+                    <h2 id="police_number_id" class="font-bold text-2xl">999</h2>
+                    <button class="text-[#5C5C5C] px-3 py-1.5 bg-[#F2F2F2] rounded-xl mb-3">Police</button>
+                    <div class="card_footer_div">
+                        <button id="police_copy"
+                            class="border border-gray-300 rounded-l-[8px] rounded-r-[8px] py-1 text-gray-600 w-[49%] transition-colors duration-300 hover:bg-gray-200">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                        <button id="call_police"
+                            class="border border-gray-300 rounded-l-[8px] bg-[#00A63E] text-white rounded-r-[8px] py-1 w-[49%] transition-transform duration-300 hover:scale-105">
+                            <i class="fa-solid fa-phone"></i> Call
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="card bg-white shadow p-5 rounded-xl transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105">
+                    <div class="card_header_part flex justify-between items-center">
+                        <div class="img_div w-[60px] h-[60px] bg-[#FFE3E2] p-3 rounded-xl">
+                            <img class="w-full h-full" src="./assets/fire-service.png" alt="">
+                        </div>
+                        <div class="heart_icon text-gray-400 transition-colors duration-300 hover:text-red-500">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <h1 class="font-bold text-[18px] mt-3">Fire Service Number</h1>
+                    <p class="text-14px text-[#5C5C5C] mb-1">Fire Service</p>
+                    <h2 id="fire_number_id" class="font-bold text-2xl">999</h2>
+                    <button class="text-[#5C5C5C] px-3 py-1.5 bg-[#F2F2F2] rounded-xl mb-3">Fire</button>
+                    <div class="card_footer_div">
+                        <button id="fire_copy"
+                            class="border border-gray-300 rounded-l-[8px] rounded-r-[8px] py-1 text-gray-600 w-[49%] transition-colors duration-300 hover:bg-gray-200">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                        <button id="fire_call"
                             class="border border-gray-300 rounded-l-[8px] bg-[#00A63E] text-white rounded-r-[8px] py-1 w-[49%] transition-transform duration-300 hover:scale-105">
                             <i class="fa-solid fa-phone"></i> Call
                         </button>
@@ -123,7 +173,7 @@
             <div id="call_history" class="grid grid-cols-1 ">
                 <!-- card  -->
     <!-- here js part  -->
-            </div>
+           
         </section>
     </main>
 
